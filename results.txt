@@ -1,3 +1,4 @@
-Deaths and injuries in 2019 in the US: 
-465 Killed
-1707 Injured
+Casualties from Mass Shootings in 2019 in the US: 
+Deaths: 465
+Injuries: 1707
+Total Casualties: 2172

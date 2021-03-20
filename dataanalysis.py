@@ -11,7 +11,6 @@ with open("GunViolence2019.csv", "r") as csvfile:
                 casualties[key] += int(item[key])
             elif key not in ["Incident ID", "Incident Date", "State", "City Or County", "Address", "Operations"]:
                 casualties[key] = int(item[key])
-    print(casualties)
 
 #sorts states by deaths + injuries
 
@@ -19,11 +18,13 @@ with open("GunViolence2019.csv", "r") as csvfile:
 
 #Prints outputs to file for online reading
 with open("results.txt", "w") as results:
-    results.write("Deaths and injuries in 2019 in the US: \n")
-    for key in casualties.keys():
-        header = key.replace("#", "")
-        header = header.strip()
-        num = str(casualties[key])
-        print(num)
-        output = num + " " + header + "\n"
-        results.write(output)
+    results.write("Casualties from Mass Shootings in 2019 in the US: \n")
+    d = "Deaths: " + str(casualties["# Killed"])
+    i = "Injuries: " + str(casualties["# Injured"])
+    t = "Total Casualties: " + str(casualties["# Killed"] + casualties["# Injured"])
+    print(d)
+    print(i)
+    print(t)
+    results.write(d + "\n")
+    results.write(i + "\n")
+    results.write(t + "\n")
