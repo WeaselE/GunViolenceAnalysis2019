@@ -14,3 +14,16 @@ with open("GunViolence2019.csv", "r") as csvfile:
     print(casualties)
 
 #sorts states by deaths + injuries
+
+
+
+#Prints outputs to file for online reading
+with open("results.txt", "w") as results:
+    results.write("Deaths and injuries in 2019 in the US: \n")
+    for key in casualties.keys():
+        header = key.replace("#", "")
+        header = header.strip()
+        num = str(casualties[key])
+        print(num)
+        output = num + " " + header + "\n"
+        results.write(output)
