@@ -2,3 +2,8 @@ Casualties from Mass Shootings in 2019 in the US:
 Deaths: 465
 Injuries: 1707
 Total Casualties: 2172
+
+States with most Deaths, Injuries, and combined from Mass Shootings in 2019: 
+State with most Deaths: Texas = 73
+State with most Injuries: California = 193
+State with most Combined Deaths and Injuries: California = 258
