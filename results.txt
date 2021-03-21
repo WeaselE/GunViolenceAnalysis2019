@@ -7,3 +7,7 @@ States with most Deaths, Injuries, and combined from Mass Shootings in 2019:
 State with most Deaths: Texas = 73
 State with most Injuries: California = 193
 State with most Combined Deaths and Injuries: California = 258
+
+
+
+Source: https://www.gunviolencearchive.org/reports/mass-shooting?year=2019

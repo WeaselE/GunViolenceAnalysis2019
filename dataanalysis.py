@@ -72,15 +72,18 @@ with open("results.txt", "w") as results:
     results.write(state_c + "\n")
     print()
     # results.write("\nStates sorted by deaths: \n")
-    mx = ["", 0]
-    while True:
-        if len(state_killed.keys()) <= 0:
-            break
-        for i in state_killed:
-            if mx[1] < state_killed[i]:
-                mx[0] = i
-                mx[1] = state_killed[i]
-        mx_r = str(mx[0]) + " = " + str(mx[1])
-        print(mx_r)
-        state_killed.pop(mx[0])
-        mx[1] = 0
+    # mx = ["", 0]
+    # while True:
+    #     if len(state_killed.keys()) <= 0:
+    #         break
+    #     for i in state_killed:
+    #         if mx[1] < state_killed[i]:
+    #             mx[0] = i
+    #             mx[1] = state_killed[i]
+    #     mx_r = str(mx[0]) + " = " + str(mx[1])
+    #     print(mx_r)
+    #     state_killed.pop(mx[0])
+    #     mx[1] = 0
+    
+    #Gives source of Data analytics
+    results.write("\n\n\nSource: https://www.gunviolencearchive.org/reports/mass-shooting?year=2019")
